@@ -1,0 +1,8 @@
+
+// a = 10
+// b = 5
+// c = a + b
+// console.log(c)
+
+// first_name = 'Arun'
+// console.log(first_name)
