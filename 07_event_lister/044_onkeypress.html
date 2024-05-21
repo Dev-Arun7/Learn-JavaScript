@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Inline Events</title>
+  </head>
+  <body>
+    <h1>Inline Events</h1>
+    <input onkeypress="keypress(this)" id="txt" type="text" />
+    <button onclick="buttonClick(this);" id="button">Click</button>
+    <script>
+      function buttonClick(a) {
+        alert(a.value + " You clicked this button");
+      }
+      function keypress(x) {
+        console.log(x.value);
+      }
+    </script>
+  </body>
+</html>

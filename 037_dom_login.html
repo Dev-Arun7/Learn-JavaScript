@@ -1,0 +1,22 @@
+<htm>
+    <head>
+        <title>
+            DOM
+        </title>
+    </head>
+    <body>
+        <h1>
+            Login
+        </h1>
+        <input id="username" type="text" placeholder="Username">
+        <input id="password" value="12345678" type="text" placeholder="Password">
+        <button id="loginButton">Login</button>
+
+        <script>
+            var user_name = document.getElementById("username");
+            user_name.value = "some value"; // This sets the username input value to "some value"
+            var pass = document.getElementById("password");
+            alert(pass.value); // This alerts the current value of the password input, which is "12345678"
+        </script>
+    </body>
+</htm>
