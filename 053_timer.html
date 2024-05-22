@@ -1,0 +1,35 @@
+<!-- Countdown timer, Here two timer running at same time -->
+<html>
+
+<head>
+    <title> Countdown</title>
+</head>
+
+<body>
+    <h1> Countdown</h1>
+    <span id="count"> </span></span>
+    <br>
+    <br>
+    <span id="count1"></span></span>
+    <script>
+        var i = 10;
+        var x = setInterval(function () {
+            if (i == 0) {
+                clearInterval(x);
+            }
+            document.getElementById("count").innerHTML = i;
+            i--;
+        }, 1000)
+
+        var j = 100;
+        var y = setInterval(function () {
+            if (j == 0) {
+                clearInterval(y);
+            }
+            document.getElementById("count1").innerHTML = j;
+            j--;
+        }, 100)
+    </script>
+</body>
+
+</html>

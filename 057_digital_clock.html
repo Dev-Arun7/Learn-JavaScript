@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Clock</title>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <h3 id="timeId"></h3> <!-- This is where the time will be displayed -->
+    <script>
+        // Get the element with the id "timeId" and store it in a variable called timeElement
+        var timeElement = document.getElementById("timeId");
+
+        // Define a function called showTime
+        function showTime() {
+            // Create a new Date object and store it in a variable called time
+            var time = new Date();
+            // Create a string representing the current time in hours, minutes, and seconds
+            var dateString = time.getHours() + " : " + time.getMinutes() + " : " + time.getSeconds();
+            // Update the innerHTML of timeElement to display the current time
+            timeElement.innerHTML = dateString;
+            // Call the showTime function again after 1000 milliseconds (1 second)
+            setTimeout(function () {
+                showTime();
+            }, 1000);
+        }
+
+        // Call the showTime function to start the clock
+        showTime();
+    </script>
+</body>
+</html>
